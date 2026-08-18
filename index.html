@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ramesh Tikhatri | Web Developer</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f8fc;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #111827;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #d1d5db;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      background: #111827;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 8vw, 72px);
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      font-size: clamp(20px, 4vw, 30px);
+      font-weight: normal;
+      color: #d1d5db;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #cbd5e1;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 22px;
+      background: white;
+      color: #111827;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+
+    .about {
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: white;
+      padding: 12px 18px;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .timeline-item {
+      background: white;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      border-left: 4px solid #111827;
+    }
+
+    .timeline-item h3 {
+      margin-bottom: 5px;
+    }
+
+    .timeline-item small {
+      color: #6b7280;
+    }
+
+    .project {
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+    }
+
+    .project a {
+      display: inline-block;
+      margin-top: 15px;
+      color: #111827;
+      font-weight: bold;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin-left: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">Ramesh Tikhatri</div>
+
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certificates</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <h1>Ramesh Tikhatri</h1>
+
+      <h2>Web Developer</h2>
+
+      <p>
+        Software & SaaS enthusiast with an interest in web development,
+        business software, ERP solutions and practical technology.
+      </p>
+
+      <a class="button" href="#projects">View My Projects</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+
+    <div class="about">
+      <p>
+        I am a Web Developer interested in building practical web
+        applications and learning modern technologies. Alongside web
+        development, I have hands-on exposure to business software,
+        ERP solutions and software training.
+      </p>
+
+      <br>
+
+      <p>
+        I enjoy learning through practical projects and continuously
+        improving my technical and professional skills.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Microsoft Office</div>
+      <div class="skill">Tally ERP</div>
+      <div class="skill">Logic ERP</div>
+      <div class="skill">Zoho POS</div>
+      <div class="skill">C</div>
+      <div class="skill">C++</div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="timeline-item">
+      <h3>Current Role</h3>
+      <small>Present</small>
+
+      <p>
+        Working with business software and gaining practical experience
+        with ERP solutions, software operations and technology.
+      </p>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+
+    <div class="timeline-item">
+      <h3>Logic ERP Basic Level Training</h3>
+      <small>Logic ERP Solutions Pvt. Ltd. — June 2026</small>
+
+      <p>
+        Successfully completed Basic Level Training in Logic ERP.
+      </p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Zoho POS Certified Associate</h3>
+      <small>Zoho — August 2026</small>
+
+      <p>
+        Successfully completed the Zoho POS certification requirements.
+      </p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Web Development Course</h3>
+      <small>STP Computer Education — June 2025</small>
+
+      <p>
+        Completed a 12-month Web Development Course with an A Grade.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Web Development Project</h3>
+
+      <p>
+        A personal web development project created using HTML, CSS
+        and JavaScript to demonstrate front-end development skills
+        and practical learning.
+      </p>
+
+      <a href="https://ramesh-tikhatri.github.io/WEB-DEVELOPMENT/"
+         target="_blank">
+        View Live Project →
+      </a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Let's Connect</h2>
+
+    <p>
+      Interested in web development, software, SaaS and technology.
+    </p>
+
+    <a class="button"
+       href="https://www.linkedin.com/in/ramesh-tikhatri-040353428/"
+       target="_blank">
+      Connect on LinkedIn
+    </a>
+  </section>
+
+  <footer>
+    © 2026 Ramesh Tikhatri. All rights reserved.
+  </footer>
+
+</body>
+</html>
