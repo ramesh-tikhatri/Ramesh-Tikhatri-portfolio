@@ -106,20 +106,39 @@
       border-radius: 14px;
     }
 
-   .skill {
+ /* Skills Container Ko Grid Banane Ke Liye */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+}
+
+/* Individual Skill Card Design */
+.skill {
     background: white;
-    padding: 12px 18px;
-    border-radius: 10px;
+    padding: 12px 16px;
+    border-radius: 12px; /* Round Corners */
     border: 1px solid #e5e7eb;
     display: flex;
     align-items: center;
     gap: 10px;
     font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease; /* Smooth Transition for Hover */
+    cursor: pointer;
 }
 
+/* Hover Effect - Card Thoda Upar Uthega Aur Shadow Aayegi */
+.skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-color: #cbd5e1;
+}
+
+/* Image Size Fix */
 .skill img {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     object-fit: contain;
 }
     .timeline-item {
